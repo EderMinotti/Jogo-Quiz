@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --fonte-padrao: "Montserrat", sans-serif;
+    --cor-roxo: #8B3DD9;
+    --cor-violeta: #3A37A6;
+    --cor-azul: #163E73;
+    --cor-azul-piscina: #4BF2F2;
+    --verde-metalico: linear-gradient(to right, #36CC72 0%, 36.72727346420288%, #0C2014 73.45454692840576%, 86.72727346420288%, #5BF89D 100%);
+    --azul-metalico: linear-gradient(to right, #1A234C 0%, 12.63345181941986%, #193775 25.26690363883972%, 36.65480464696884%, #0D5EAF 48.04270565509796%, 58.718861639499664%, #164387 69.39501762390137%, 84.69750881195068%, #1A234C 100%);
+    --vermelho-metalico: linear-gradient(to right, #880000 0%, 2.671755664050579%, #960000 5.343511328101158%, 14.694656245410442%, #C10100 24.045801162719727%, 32.44274854660034%, #9F0100 40.83969593048096%, 41.4122149348259%, #980001 41.98473393917084%, 48.85496348142624%, #6C0000 55.72519302368164%, 56.87023103237152%, #6E0001 58.0152690410614%, 62.404581904411316%, #860001 66.79389476776123%, 67.17557311058044%, #890101 67.55725145339966%, 71.1832046508789%, #AC0003 74.80915784835815%, 75.38167834281921%, #B20003 75.95419883728027%, 81.48854970932007%, #BA0003 87.02290058135986%, 93.51145029067993%, #8C0005 100%);
+
+
+
+
+}
+
+body {
+ font-family: var(--fonte-padrao);
+ background-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.quiz {
+    background-image: linear-gradient(var(--cor-azul),var(--cor-roxo));
+    width: 90%;
+    padding: 2rem 0;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+
+.pergunta {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    font-size: 35px;
+    color: var(--cor-azul-piscina);
+    text-align: center;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin: 3rem auto;
+    font-size: 35px;
+    color: var(--cor-azul-piscina);
+    border: 2px dashed var(--cor-azul-piscina);
+    width: 500px;
+    padding: 0.5rem 0;
+}
+
+.item-lista {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 1rem;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    border: 1px solid var(--cor-azul-piscina);
+}
+
+.lista-respostas {
+    width: 300px;
+    margin: 0 auto;
+
+}
+
+#proxima {
+    width: 200px;
+    padding: 0.5rem 0;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-image: var(--azul-metalico); 
+    border:1px solid var(--cor-azul-piscina);
+    font-family: var(--fonte-padrao);
+    font-weight: 600;
+    color: var(--cor-azul-piscina);
+    
+    
+}
+
+.pontos {
+    color: var(--cor-azul-piscina);
+    width: 110px;
+    margin: 0 auto 1rem;
+    text-align: start;
+    border: 1px dashed var(--cor-azul-piscina);
+    padding-left: 3px;
+}
+
+
+
+.perguntas {
+    color: var(--cor-azul-piscina);
+    width: 110px;
+    margin: 0 auto 1rem;
+    text-align: start;
+    border: 1px dashed var(--cor-azul-piscina);
+    padding-left: 3px;
+}
+
+
+.fim-de-jogo-container > p {
+    color: #4BF2F2;
+    margin: 2rem;
+}
+
+.fim-de-jogo-container {
+    width: 800px;
+    border: 1px dashed var(--cor-azul-piscina);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fim-de-jogo {
+    display: none;
+}
+
+.imagem-like {
+    width: 40%;
+}
+
+#button_novoJogo {
+    display: block;
+    width: 30%;
+    margin: 2rem auto;
+    padding: 1rem;
+    color: var(--cor-azul);
+    font-family: var(--fonte-padrao);
+    font-weight: 800;
+    border-radius: 8px;
+    border: none;
+
+}
+
+
+@media (max-width: 600px) {
+  .quiz, .fim-de-jogo-container {
+    max-width: 95%;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .titulo {
+    font-size: 24px;
+    width: 90%;
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+
+  .pergunta {
+    font-size: 22px;
+    margin: 1rem 0.5rem;
+    padding: 0 1rem;
+  }
+
+  .lista-respostas {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .item-lista {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  #proxima {
+    width: 80%;
+    display: block;
+    margin: 1.5rem auto 0;
+  }
+
+  .container-pontos {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .pontos, .perguntas {
+    margin: 0;
+    font-size: 14px;
+    padding: 0.3rem;
+    width: auto;
+  }
+
+  .imagem-like {
+    width: 70%;
+  }
+
+  .fim-de-jogo-container {
+    border: none;
+  }
+
+  
+
+  
+}

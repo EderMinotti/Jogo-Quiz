@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container-pergunta">
+        <h2 class="titulo">Jogo de Perguntas</h2>
+    </div>
+
+    <div class="container-pontos">
+        <p class="pontos">Pontos: 0</p>
+        <p class="perguntas">Perguntas: 1</p>
+    </div>
+
+    <section class="quiz">
+        <div id="container__quiz">
+            <div id="local-pergunta">
+
+            </div>
+            <div id="respostas">
+                <ul class="lista-respostas">
+                 
+                </ul>
+            </div>
+            <button id="proxima" style="display:none">Próxima</button>
+        </div>        
+    </section>
+
+    <section class="fim-de-jogo"> 
+        <div class="fim-de-jogo-container">
+            <p>Fim De jogo</p>
+            <p id="acertos">Total de acertos: 5</p>
+            <img class="imagem-like" src="thumbs-up-solid.svg"  alt="">
+            <button id="button_novoJogo">Novo Jogo</button>
+        </div>
+    </section>
+
+
+<script src="listaPerguntas.js"></script>
+<script src="index.js"></script>
+
+</body>
+
+</html>
+
