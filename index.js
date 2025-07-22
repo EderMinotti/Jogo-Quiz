@@ -61,7 +61,7 @@ function mostrarAlternativas(perguntaObj) {
         listaAlternativas.appendChild(botao);
 
 
-        paragrafoPergunta.addEventListener("click", (evento) => {
+        listaAlternativas.addEventListener("click", (evento) => {
 
             if (evento.target.innerText == perguntaObj.resposta) {
                 listaAlternativas.style.backgroundImage = "var(--verde-metalico)";
